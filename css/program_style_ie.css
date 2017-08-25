@@ -1,0 +1,48 @@
+.topnav {
+    margin: 0 0 10px 0;
+	width: 1050px;
+ }
+.topnav li {
+    display: inline;
+	margin-bottom: 4px;
+	list-style-type: none;
+ }
+.topnav a{
+    display: inline;
+	position: relative; /* somehow required to make IE render the upper and lower padding and borders.. */
+ }
+ 
+.topnav a:link, .topnav a:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Sans-serif;
+    border: 2px solid #555;
+    background: #bbb;
+    padding: 3px;
+ }
+.topnav a:hover, .topnav a:active {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Sans-serif;
+    border: 2px solid #555;
+    background: #eee;
+    padding: 3px;
+ }
+ 
+body.create a:link#create, body.create a:visited#create { border: 4px solid red; }
+body.edit a#edit, body.edit a:visited#edit { border: 4px solid red; }
+body.editcust a#editcust, body.editcust a:visited#editcust { border: 4px solid red; }
+body.view a#view, body.view a:visited#view { border: 4px solid red; }
+body.delete a#delete, body.delete a:visited#delete { border: 4px solid red; }
+body.email a#email, body.email a:visited#email { border: 4px solid red; }
+
+a:link.nor, a:visited.nor{ text-decoration: underline; color: blue; }
+a:hover.nor, a:active.nor { text-decoration: none; color: black; }
+
+h2 {padding: 10px; color: black; background-color: #AAAAAA; border: 3px solid #444444; font-family: Helvetica, Arial, Sans-serif;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+select option:nth-child(even) {background-color: #ccc; }
